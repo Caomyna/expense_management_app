@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:expense_management_app/screens/onboarding/onboarding_screen.dart';
 import 'package:expense_management_app/screens/splash/splash_screen.dart';
+import 'package:expense_management_app/screens/detail_transaction/detail_transaction.dart';
 // import 'package:onboarding_flutter_app/screens/welcome_scree.dart';
 
 class AppRoutes {
@@ -20,9 +21,9 @@ class AppRoutes {
         return MaterialPageRoute(
             settings: settings, builder: (_) => const OnboardingScreen());
 
-      // case AppRoutes.home:
-      //   return MaterialPageRoute(
-      //       settings: settings, builder: (_) => const WelcomeScreen());
+      case AppRoutes.home:
+        return MaterialPageRoute(
+            settings: settings, builder: (_) => DetailTransaction());
 
       default:
         return MaterialPageRoute(
